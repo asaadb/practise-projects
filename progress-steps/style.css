@@ -113,4 +113,22 @@ body {
 .btn:active {
     transform: scale(0.95);
     transition: transform 0.3s ease;
-  }
+}
+
+.disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.disabled:active {
+    transform: none;
+}
+
+.active .num-container {
+    border-color: #3498db;
+}
+
+.active .bar {
+    background-color: #3498db;
+}
