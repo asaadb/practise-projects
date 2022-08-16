@@ -88,6 +88,7 @@ body {
     color: #808080;
     transition: border-color 0.5s ease;
 }
+
 .bar {
     position: relative;
     display: inline-block;
@@ -95,7 +96,20 @@ body {
     height: 4px;
     margin: 0;
     background-color: #e0e0e0;
-    
+}
+
+.bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #3498db;
+    z-index: 3;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.8s ease;
 }
 
 .btn {
@@ -127,8 +141,10 @@ body {
 
 .active .num-container {
     border-color: #3498db;
+    transition: border-color 0.8s ease;
 }
 
-.active .bar {
-    background-color: #3498db;
+.active .bar::before {
+    transform: scaleX(1);
+    transition: transform 0.5s ease;
 }
