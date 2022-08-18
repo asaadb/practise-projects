@@ -71,6 +71,18 @@ body {
     background-color: #ff7979;
 }
 
+.open.active {
+    position: absolute;
+    left: 106px;
+    top: 120px;
+} 
+
+.close.active {
+    position: absolute;
+    left: 106px;
+    top: 120px;
+}
+
 .article-container {
     color:#242931;
     padding: 2rem;
