@@ -84,5 +84,10 @@ body {
 
 .img-header {
     font-size: 2rem;
-    margin-top: 2rem;
+    margin: 2rem 0;
+}
+
+.img {
+    display: block;
+    width: 100%;
 }
