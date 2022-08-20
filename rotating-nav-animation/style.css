@@ -60,6 +60,7 @@ body {
     background-color:#333333;
     color:#242931;
     width: 100%;
+    overflow: hidden;
 }
 
 .menuIcons-container {
