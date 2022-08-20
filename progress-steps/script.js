@@ -1,9 +1,10 @@
 const nextBtn = document.querySelector('#next');
 const prevBtn = document.querySelector('#prev');
+const maxSteps = document.querySelectorAll('.step-container').length
 
 // This keeps track of the steps taken
 let steps = 1;
-const maxSteps = 4;
+// const maxSteps = 4;
 
 nextBtn.addEventListener('click', function () {
     steps++;
