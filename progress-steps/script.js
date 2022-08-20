@@ -1,31 +1,30 @@
 const nextBtn = document.querySelector('#next');
 const prevBtn = document.querySelector('#prev');
-const maxSteps = document.querySelectorAll('.step-container').length
+const steps = document.querySelectorAll('.step-container').length
 
 // This keeps track of the steps taken
-let steps = 1;
-// const maxSteps = 4;
+let currentStep = 1;
 
 nextBtn.addEventListener('click', function () {
-    steps++;
-    const progress = document.querySelector(`.step-container:nth-of-type(${steps})`)
+    currentStep++;
+    const progress = document.querySelector(`.step-container:nth-of-type(${currentStep})`)
     progress.classList.add('active')
-    if (steps > 1) {
+    if (currentStep > 1) {
         enableBtn(prevBtn);
     }
-    if (steps === maxSteps){
+    if (currentStep === steps){
         disableBtn(this);
     }
 })
 
 prevBtn.addEventListener('click', function () {
-    steps--;
-    const progress = document.querySelector(`.step-container:nth-of-type(${steps + 1})`)
+    currentStep--;
+    const progress = document.querySelector(`.step-container:nth-of-type(${currentStep + 1})`)
     progress.classList.remove('active')
-    if ( steps < maxSteps) {
+    if ( currentStep < steps) {
         enableBtn(nextBtn);
     }
-    if (steps === 1){
+    if (currentStep === 1){
         disableBtn(this);
     }
 })
