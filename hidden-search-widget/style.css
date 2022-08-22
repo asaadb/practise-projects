@@ -57,19 +57,27 @@ body {
 
 .search-container {
     display: flex;
+    justify-content: center;
     height: 55px;
-}
-
-.search {
-    padding: 0 20px;
-    font-size: 1.1rem;
-    border: none;
-    width: 200px;
-    transition: width 0.3s linear, padding 0.3s linear;
 }
 
 .search:focus{
     outline: none;
+}
+
+.search{
+    width: 0;
+    padding: 0;
+    transition: width 0.2s linear, padding 0.2s linear;
+    border: none;
+}
+
+.active .search {
+    padding: 0 20px;
+    font-size: 1.1rem;
+    border: none;
+    width: 200px;
+    transition: width 0.2s linear, padding 0.2s linear;
 }
 
 #btn {
