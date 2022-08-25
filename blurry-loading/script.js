@@ -14,8 +14,6 @@ function loadingEffect () {
         num++;
         opacity -= 0.01;
         blur -= 0.01;
-        console.log(opacity)
-        console.log(num)
         if (num > 100) {
             clearInterval(intervalId);
         }
