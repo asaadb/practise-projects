@@ -71,7 +71,7 @@ body {
     margin: 1rem 0;
 }
 
-.content {
+.content-container {
     width: 400px;
     height: 200px;
     margin: 1rem 0;
@@ -87,15 +87,15 @@ body {
     transition: transform 0.35s linear;
 }
 
-.content:nth-of-type(odd) {
+.content-container:nth-of-type(odd) {
     transform: translateX(-300%);
 }
 
-.content:nth-of-type(even) {
+.content-container:nth-of-type(even) {
     transform: translateX(300%);
 }
 
-.content.appear {
+.content-container.appear {
     transform: translate(0);
     transition: transform 0.35s linear;
 }

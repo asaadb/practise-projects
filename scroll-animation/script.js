@@ -1,5 +1,5 @@
 const scroll = document.querySelector('body');
-const contents = document.querySelectorAll('.content');
+const contents = document.querySelectorAll('.content-container');
 
 const options = {
     rootMargin:"0px 150% 0px 150%",
