@@ -85,4 +85,10 @@ body {
 	position: relative;
 	top: 30%;
 	margin: 0.5rem 0;
+	color: #fff;
+}
+
+.header {
+	font-size: 4.2rem;
+	font-weight: bold;
 }
