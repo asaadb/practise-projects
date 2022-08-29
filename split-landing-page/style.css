@@ -62,6 +62,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	transition: flex 1s ease-in;
+	overflow: hidden;
 }
 
 .right-container {
@@ -73,6 +74,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	transition: flex 0.8s ease-in;
+	overflow: hidden;
 }
 
 
@@ -91,6 +93,7 @@ body {
 .header {
 	font-size: 4.2rem;
 	font-weight: bold;
+	white-space: nowrap;
 }
 
 .buy-btn {
@@ -99,6 +102,7 @@ body {
 	padding: 25px 80px;
 	font-size: 1rem;
 	font-weight: bold;
+	white-space: nowrap;
 }
 
 .left-container .buy-btn:hover {
