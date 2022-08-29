@@ -78,7 +78,6 @@ body {
 	overflow: hidden;
 }
 
-
 .right-container:hover, .left-container:hover {
 	flex: 3;
 	transition: flex 0.8s ease-in;
@@ -114,4 +113,14 @@ body {
 .right-container .buy-btn:hover {
 	background-color: #1c7a1c;
 	border-color: #1c7a1c;
+}
+
+@media (max-width: 850px) {
+	.header {
+		font-size: 2rem;
+	}
+	.buy-btn {
+		font-size: 1rem;
+		padding: 20px 50px;
+	}
 }
