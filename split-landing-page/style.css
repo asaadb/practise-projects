@@ -108,11 +108,13 @@ body {
 .left-container .buy-btn:hover {
 	background-color:#5755c3;
 	border-color: #5755c3;
+	cursor: pointer;
 }
 
 .right-container .buy-btn:hover {
 	background-color: #1c7a1c;
 	border-color: #1c7a1c;
+	cursor: pointer;
 }
 
 @media (max-width: 850px) {
