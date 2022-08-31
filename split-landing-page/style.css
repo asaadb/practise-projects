@@ -5,7 +5,7 @@ body {
 	height: 100vh;
 }
 
-.left-container, .right-container {
+.section {
 	flex-basis: 50%;
 	text-align: center;
 	background-position: center;
@@ -14,19 +14,19 @@ body {
 	transition: flex 0.8s ease-in;
 	overflow: hidden;
 }
-.left-container {
+.playstation {
 	background-image:
     linear-gradient(rgba(127,125,236, 0.8), rgba(127,125,236, 0.8)),
     url("https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
 }
 
-.right-container {
+.xbox {
 	background-image:
     linear-gradient(rgba(42,41,42, 0.8), rgba(42,41,42, 0.8)),
     url("https://images.unsplash.com/photo-1621259182978-fbf93132d53d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80");
 }
 
-.right-container:hover, .left-container:hover {
+.section:hover {
 	flex-basis: 150%;
 	transition: flex 0.8s ease-in;
 }
@@ -54,13 +54,13 @@ body {
 	white-space: nowrap;
 }
 
-.left-container .buy-btn:hover {
+.playstation .buy-btn:hover {
 	background-color:#5755c3;
 	border-color: #5755c3;
 	cursor: pointer;
 }
 
-.right-container .buy-btn:hover {
+.xbox .buy-btn:hover {
 	background-color: #1c7a1c;
 	border-color: #1c7a1c;
 	cursor: pointer;
