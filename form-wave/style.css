@@ -1,4 +1,5 @@
 body {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     color: white;
     background-color: #4682b4;
@@ -18,6 +19,7 @@ body {
 
 .form-header {
     font-size: 2.2rem;
+    font-weight: 500;
     margin: 1rem auto;
 }
 
@@ -32,6 +34,7 @@ body {
 
 .input-container label {
     font-size: 1.2rem;
+    font-weight: 400;
     position: absolute;
     bottom: 1rem;
 }
