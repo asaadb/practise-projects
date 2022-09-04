@@ -28,7 +28,6 @@ body {
     font-size: 1.1rem;
     border: none;
     width: 200px;
-    transition: width 0.2s linear, padding 0.2s linear;
 }
 
 #btn {

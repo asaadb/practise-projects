@@ -45,20 +45,19 @@ body {
     left: 65%;
     top: 60%;
     transform: none;
-    transition: left 0.6s linear, top 0.6s linear;
+    transition: transform 0.6s linear, left 0.6s linear, top 0.6s linear;
 }
 
 .active .open {
     top: 1%;
     transform: rotate(-90deg);
     transform-origin: left;
-    transition: transform 0.6s linear, left 0.6s linear, top 0.6s linear;
+    
 } 
 
 .active .close{
     left: 60%;
     top: 60%;
-    transition: transform 0.6s linear, left 0.6s linear, top 0.6s linear;
 }
 
 .article-container {
@@ -76,7 +75,6 @@ body {
 .active .article-container {
     transform: rotate(-20deg);
     transform-origin: top left;
-    transition: transform 0.6s linear;
 }
 
 .article {
@@ -122,7 +120,6 @@ body {
 
 .active .nav {
     left: 1%;
-    transition: left 0.8s linear;
 }
 
 .nav li {

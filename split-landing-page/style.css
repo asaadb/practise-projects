@@ -30,7 +30,6 @@ body {
 
 .section:hover {
 	flex-basis: 80%;
-	transition: flex-basis 0.8s ease-in;
 }
 
 .header, .buy-btn {
