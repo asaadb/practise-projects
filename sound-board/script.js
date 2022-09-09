@@ -9,9 +9,13 @@ const sounds = {
     wrong: new Audio("./sounds/wrong.mp3")
 }
 
+let currentSound;
 buttons.forEach(button => {
     button.addEventListener('click', function () {
+        if (currentSound) {
+            currentSound.pause();
+        }
         sounds[this.id].play();
+        currentSound = sounds[this.id];
     })
 })
-
