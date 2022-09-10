@@ -41,3 +41,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: 1rem;
 }
+
+.joke-btn:active {
+    transform: scale(0.97);
+  }
