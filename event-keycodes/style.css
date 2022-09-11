@@ -8,11 +8,42 @@ body {
     text-align: center;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .container .header {
     font-size: 1.5rem;
     font-weight: bold;
-    border: 1px solid ;
+    border: 1px solid;
     padding: 1rem;
     background-color:#eeeeee;
     color: black;
+}
+
+.key-box {
+    border: 1px solid;
+    background-color:#eeeeee;
+    width: 150px;
+    height: 65px;
+    margin: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.key-name {
+    color:#666b71;
+    font-weight: bold;
+    position: absolute;
+    top: -25px;
+    font-size: 1rem;
+}
+
+.key {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
