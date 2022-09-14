@@ -25,6 +25,10 @@ h1 {
     border-radius: 10px;
 }
 
+.faq-container.open {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .btn {
     position: absolute;
     right: 1rem;
@@ -37,4 +41,10 @@ h1 {
 .answer {
     font-size: 1rem;
     margin-top: 2rem;
+    display: none;
 }
+
+.open .answer {
+    display: block;
+}
+
