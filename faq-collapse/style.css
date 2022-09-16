@@ -33,6 +33,21 @@ h1 {
 .btn {
     position: absolute;
     right: 1rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#close-icon {
+    display: none;
+}
+.open #close-icon {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.open #open-icon {
+    display: none;
 }
 
 .question {
