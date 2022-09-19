@@ -1,0 +1,36 @@
+body {
+    background-image: linear-gradient(#eafbff 50%, #5290f9 50%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    background-color: #fff;
+    padding: 0.8rem;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 3px;
+}
+.nav-list {
+    display: flex;
+}
+
+.nav-item {
+    margin: 0.8rem;
+}
+
+.nav-item a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+}
+.btn {
+    font-size: 1.4rem;
+    background:none;
+    border: none;
+    color:#5290f9 ;
+    cursor: pointer;
+}
