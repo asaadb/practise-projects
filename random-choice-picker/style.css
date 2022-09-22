@@ -1,5 +1,6 @@
 
 body {
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     height: 100vh;
     text-align: center;
@@ -18,10 +19,9 @@ body {
 
 .instructions {
     font-size: 1.3rem;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 1.2;
-    margin: 1rem auto;
-    
+    margin: 1rem auto;  
 }
 
 .choices-input {
@@ -40,6 +40,7 @@ body {
 }
 
 .choice {
+    font-weight: 400;
     display: inline-block;
     background-color: #f0932b;
     margin: 0.5rem;
