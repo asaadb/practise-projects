@@ -2,8 +2,34 @@ const textInput = document.getElementById('choices-input');
 const choicesOutput = document.getElementById('choices-output')
 
 textInput.addEventListener('keyup', function(event) {
-    createChoices(event.target.value);
+    let choicesList = createChoices(event.target.value);
+    if (event.key === 'Enter' && choicesList.length > 0) {
+        console.log(choicesList)
+        event.target.value = '';
+        randomPick(choicesList);
+    }
+    else {
+
+    }
 })
+
+function randomPick (list) {
+    let removeId;
+    let intrevalId = setInterval(() => {
+        let index = Math.floor(Math.random() * list.length);
+        choicesOutput.children[index].classList.add('selected');
+        removeId =  setTimeout (() => {
+            choicesOutput.children[index].classList.remove('selected');
+        }, 100);
+    }, 200)
+
+    setTimeout(() => {
+        clearInterval(intrevalId);
+        let choosen = choicesOutput.children[Math.floor(Math.random() * list.length)]
+        clearTimeout(removeId);
+        choosen.classList.add('selected')
+    }, 4000)
+}
 
 function createChoices(input) {
     let choices = input.split(',').filter(val => val.trim() !== '').map(val => val.trim());
@@ -14,6 +40,7 @@ function createChoices(input) {
         element.textContent = choice;
         choicesOutput.appendChild(element);
    });
+   return choices;
 }
 
 
