@@ -4,7 +4,6 @@ const choicesOutput = document.getElementById('choices-output')
 textInput.addEventListener('keyup', function(event) {
     let choicesList = createChoices(event.target.value);
     if (event.key === 'Enter' && choicesList.length > 0) {
-        console.log(choicesList)
         event.target.value = '';
         randomPick(choicesList);
     }
