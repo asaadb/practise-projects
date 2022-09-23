@@ -8,9 +8,6 @@ textInput.addEventListener('keyup', function(event) {
         event.target.value = '';
         randomPick(choicesList);
     }
-    else {
-
-    }
 })
 
 function randomPick (list) {
